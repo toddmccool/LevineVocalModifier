@@ -1,6 +1,7 @@
 body {
   color: black; /* sets the text color to white */
   position: relative; /* sets the position property to relative so that the ::before pseudo-element can be positioned absolutely */
+  font-size: 20px;
 }
 
 body::before {
