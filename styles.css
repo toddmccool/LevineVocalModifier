@@ -1,0 +1,62 @@
+body {
+  color: black; /* sets the text color to white */
+  position: relative; /* sets the position property to relative so that the ::before pseudo-element can be positioned absolutely */
+}
+
+body::before {
+  content: ""; /* adds an empty content to the ::before pseudo-element */
+  position: absolute; /* sets the position property to absolute */
+  top: 0; /* positions the ::before pseudo-element at the top of the body */
+  left: 0; /* positions the ::before pseudo-element at the left of the body */
+  right: 0; /* positions the ::before pseudo-element at the right of the body */
+  bottom: 0; /* positions the ::before pseudo-element at the bottom of the body */
+  background-image: url("adam-levine.jpg"); /* sets the background image for the ::before pseudo-element */
+  opacity: 0.5; /* sets the opacity of the ::before pseudo-element to 50% */
+  z-index: -1; /* sets the z-index property to -1 to ensure that the ::before pseudo-element is behind the content */
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.header-bold {
+  display: inline-block;
+  color: rgb(255, 38, 0);
+  font-size: 15px;
+  font-style: italic;
+}
+
+.header-pfont {
+  display: inline-block;
+  color: blue;
+  font-size: 32px;
+  font-style: italic;
+}
+
+#replaceBtn {
+  background-color: red;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: rgb(244, 235, 235);
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 14px;
+    display: inline-block;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  textarea,
+  div,
+  pre {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+}
