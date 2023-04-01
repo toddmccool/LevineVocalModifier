@@ -16,6 +16,12 @@ body::before {
   z-index: -1; /* sets the z-index property to -1 to ensure that the ::before pseudo-element is behind the content */
 }
 
+.top-pfont {
+  display: inline-block;
+  color: rgb(222, 21, 21);
+  font-size: 20px;
+}
+
 .highlight {
   background-color: yellow;
 }
@@ -23,7 +29,7 @@ body::before {
 .header-bold {
   display: inline-block;
   color: rgb(255, 38, 0);
-  font-size: 15px;
+  font-size: 20px;
   font-style: italic;
 }
 
@@ -34,6 +40,12 @@ body::before {
   font-style: italic;
 }
 
+.tips-pfont {
+  display: inline-block;
+  color: rgb(110, 133, 8);
+  font-size: 20px;
+  font-style: italic;
+}
 #replaceBtn {
   background-color: red;
   color: white;
