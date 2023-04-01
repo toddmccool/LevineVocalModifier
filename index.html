@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PronounSing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+     
+      .highlight {
+        background-color: yellow;
+      }
+
+      .header-bold {
+        display: inline-block; 
+        color: rgb(255, 38, 0); 
+        font-size: 15px;
+        font-style: italic;
+      }
+
+      .header-pfont {
+        display: inline-block; 
+        color: blue; 
+        font-size: 32px;
+        font-style: italic;
+      }
+
+      #replaceBtn {
+        background-color: red; 
+        color: white
+      }
+
+
+
+      a {
+  text-decoration: none;
+  color: inherit;
+  background-color: rgb(244, 235, 235);
+}
+
+
+
+
+      @media only screen and (max-width: 320px) {
+        body {
+          font-size: 14px;
+          display: inline-block;
+          flex-direction: column;
+          max-width: 100%;
+        }
+
+        textarea,
+        div,
+        pre {
+          width: 100%;
+          box-sizing: border-box;
+          max-width: 100%;
+        }
+
+        @media only screen and (max-width: 320px) {
+
+
+
+ 
+}
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+     <div class ="copperfield"> 
+      <h3>Stop Straining // Stop Flipping !</h3>
+      <h4>
+        <a href="https://youtu.be/omlYX0eauuw?t=65">Vowel Modification</a>  as nearly everyone I've seen describe it,  is not sufficient
+        to finding & maintaining effective resonance in the voice. <br />
+        it is not just a matter of Narrowing & modifying to the vowel
+        backward in the formant series <br />as every <a href="https://www.google.com/search?rlz=1C5CHFA_enUS775US775&sxsrf=APwXEde8hf5R9YK9xajn-TlwyqR8jNAFQg:1679989655615&q=vowel+modification+chart&tbm=isch&source=univ&fir=Gtdz3hV4j3nyCM%252C0asx8UucVob8QM%252C_%253BmwUG-F8FzxEM6M%252CgB4Zx98Dfb06ZM%252C_%253BJiQytbXaRVHlGM%252C0asx8UucVob8QM%252C_%253B5rwjJljxeh3mdM%252C88mbOcmammw6BM%252C_%253BFuP5XgIJl7F7BM%252CfF_tMYQVsFGkKM%252C_%253BKhOKJ_zJjHfRiM%252COTKqFSuVgRE4oM%252C_%253BgolQgNpgFtwftM%252CnnabC-thnm9xcM%252C_%253BT4G3C2SNfbbgsM%252CxQ4nAVBHq94YlM%252C_%253BW2Dnu4hnEbYkCM%252CgB4Zx98Dfb06ZM%252C_%253BICfHzwKgU6W37M%252CuUOyFS4wRk1iKM%252C_%253B02EafryLuS3NuM%252C0asx8UucVob8QM%252C_%253B-zVngxS7MGq5ZM%252COTKqFSuVgRE4oM%252C_%253BobWJYgQlGwo2-M%252CgB4Zx98Dfb06ZM%252C_&usg=AI4_-kSQKs04HJtnIh3OlDF8F1yhtZv54g&sa=X&sqi=2&ved=2ahUKEwihu5iVkf79AhVrO0QIHSOWA_4QjJkEegQIExAC&biw=1398&bih=612&dpr=2" >vowel modification chart</a> out there
+        will show you, <br />
+        <i>that approach is helpful on some vowels and words, but not the whole
+        picture.</i> <br /><br>Consonants matter too! <br>some consonants will cause you to <a href="https://youtu.be/HXLZPvGWNeE?t=215">expel too much air, </a><br>while others will facilitate smooth <i>vocal compression</i><br> <br>finally, Some vowels need to go forward (not backward) because <i>open resonance </i>is a matter of BALANCING the vowel, in other words, <br>
+        <span class="header-pfont">pronounSing!</span>
+<br>
+        </h2>
+        so ALL of the words you sing RESONATE in the <a href="https://youtu.be/KC6vNPLzftw?t=481">same general (powerful
+        & open) area</a>
+      </h4>
+
+      <h3>so, to trick your vocal tract, get into Mix Voice, & start pronounSing instantly...<br>
+    Insert the
+      <span class="header-bold">Challenging Original Line of Lyrics</span>  
+
+      <br />
+
+      <label for="textInput"></label>
+      <textarea id="textInput" rows="10" cols="60" placeholder="HERE!"></textarea>
+    </div></h3>
+    <button id="replaceBtn">
+      pronoun<b>Sing</b> those Lyrics!
+    </button>
+    <div>
+      <pre id="output"></pre>
+    </div></div>
+    <script>
+      const textInput = document.getElementById("textInput");
+      const output = document.getElementById("output");
+      const replaceBtn = document.getElementById("replaceBtn");
+
+      replaceBtn.addEventListener("click", function () {
+        
+        const copperfieldDiv = document.querySelector('.copperfield');
+copperfieldDiv.style.display = 'none';
+ 
+ 
+
+
+
+        let text = textInput.value;
+        const lines = text.split("\n");
+        const modifiedLines = [];
+        const originalLines = [];
+
+        for (let i = 0; i < lines.length; i++) {
+          const modifiedLine = lines[i]
+         .replace(/[Yy]ea/g, "yOhR")
+            .replace(/[Cc]ome/g, "guwLnz")
+            .replace(/[Ww]el/g, "wor")
+            .replace(/[Ii]ght/g, "ord")
+             .replace(/[Ii]/g, "ah")
+            .replace(/[Hh]y/g, "ah")
+            .replace(/[Ll]ight/g, "Lahd")
+           .replace(/[Ii]ll/g, "ar")
+           .replace(/[Ii]te/g, "ord")
+            .replace(/[ate]/g, "ord")
+           .replace(/[ait]/g, "ord")
+            .replace(/[Ss]he_/g, "ShOR")
+            .replace(/[Oo]o/g, "OhL")
+            .replace(/[Hh]e/g, "hor")
+            .replace(/[Mm]e/g, "hor")
+           .replace(/knee/g, "Nor")
+             .replace(/[Gg]ot/g, "Gord")
+             .replace(/bein/g, "buhAyin")
+            .replace(/ag/g, "org")
+            .replace(/at/g, "ort")
+            .replace(/[Ww]here/g, "woR")
+            .replace(/[Ww]ear/g, "woR")
+            .replace(/[Ll]ove/g, "LOhrV")
+            .replace(/[Ii]t/g, "oRd")
+            .replace(/which/g, "woRd")
+            .replace(/[Ss]i/g, "zArt")
+             .replace(/[Gg]ot/g, "Gart")
+             .replace(/[Ff]irst/g, "Vorzt")
+               .replace(/[Ww]irst/g, "worzt")
+                 .replace(/[Vv]er/g, "voR")
+                 .replace(/[Mm]er/g, "mORL")
+                 .replace(/[Bb]roke/g, "brorGun")
+                   .replace(/[Aa]l/g, "or")
+                       .replace(/[Ll]iv/g, "LarV")
+                              .replace(/[Ww]e /g, "wor")
+                               .replace(/[Yy]e /g, "yohr")
+                                .replace(/[Oo]n /g, "orN")
+                                .replace(/[Oo]n't /g, "orNt")
+
+                                     .replace(/[Ll]ord/g, "Lung")
+
+                                       .replace(/[Ss]hord/g, "shor")
+                                        .replace(/[Ww]hord /g, "shor")
+
+                                        .replace(/wordhll/g, "warL")
+                                        .replace(/bord/g, "bor")
+                                         .replace(/lovordd/g, "lorvd")
+ .replace(/pLungcord/g, "pLorz") 
+     .replace(/only/g, "awnLor")                                  
+
+ .replace(/body/g, "borDor")     
+  
+ .replace(/[Yy]ou/g, "yohL")    
+ .replace(/[Kn]ow/g, "nawR")   
+ .replace(/ordh/g, "or")  
+ .replace(/rdh/g, "r") 
+.replace(/orordord/g, "thord") 
+
+.replace(/[Mm]y /g, "moyrL ") 
+
+
+.replace(/rordordl /g, "roRL ") 
+
+
+ 
+
+            ;
+
+          modifiedLines.push(modifiedLine);
+          originalLines.push(lines[i]);
+        }
+
+        let result = "";
+        for (let i = 0; i < modifiedLines.length; i++) {
+          result +=
+            '<span class="highlight">' +
+            modifiedLines[i] +
+            "</span>" +
+            "\n" +
+            originalLines[i] +
+            "\n" +
+            "\n";
+        }
+
+        
+        output.innerHTML =
+          "<h3 style='display: inline-block;'>now, get on to</h3>" +
+          "<h2 style='display: inline-block; color: blue; margin-left: 10px; font-style: italic;'>pronounSing!</h2><br>" +
+          result + "<br>Only Modify the Words that are troublesome to you<br><br><div class='genDiv'><i><span style='background-color: 	rgb(191, 255, 0)'>in general, to find <b>balance</b> in the vowels<br> eh, ih, & oo need to go forward to AY <br> ee becomes ayOO <a href='https://youtu.be/0Gv8XLv2ccU'>or you could try iy </a><br> uh becomes OY  <br> iy goes back & down to <a href='https://youtu.be/Z9MB3H5dO84?t=291'>OLNG</a> <br> oh goes deeper to <a href='https://youtu.be/Z9MB3H5dO84?t=291'>OLNG</a> <br> ay goes backward to OOO <br> ooo opens up to OH  <br>& everything else becomes OH</i> </span></div> <br><br><br>Finally, when all else fails, <br>try replacing the challenging word with <br><br><div class='nglayDiv1'><span style='background-color: 	rgb(255, 0, 255)'><b>nGLoY</b></span></div> <br>then slowly migrate back toward your challenging word, 1 syllable at a time <br><i>notice the shifts that occur in the <br>throat, the tongue, the larynx & the breath support</i><br>modify just enough so it sounds natural but your best resonance is maintained<br>that word works for me, It might work for you as well.<br> <div class='nglayDiv'><span style='background-color: 	rgb(255, 0, 255)'>the <b>NG</b> facilitates pharyngeal resonance, <br>the <b>L</b>  Lowers my Larynx <br>the <b>O</b>  Opens up the word <br>the <b>Y</b>  yields some bright twayng so I don't sound operatic</span></div><br>remember the key is <b>Balance!</b> <h3><br><a href='https://toddmccool.github.io/vocalApp23/'>do it again?</a></h3>";
+      });
+    </script>
+  </body>
+</html>
