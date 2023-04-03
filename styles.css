@@ -12,6 +12,7 @@ body::before {
   right: 0; /* positions the ::before pseudo-element at the right of the body */
   bottom: 0; /* positions the ::before pseudo-element at the bottom of the body */
   background-image: url("adam-levine.jpg"); /* sets the background image for the ::before pseudo-element */
+  background-size: cover;
   opacity: 0.5; /* sets the opacity of the ::before pseudo-element to 50% */
   z-index: -1; /* sets the z-index property to -1 to ensure that the ::before pseudo-element is behind the content */
 }
@@ -40,12 +41,6 @@ body::before {
   font-style: italic;
 }
 
-.tips-pfont {
-  display: inline-block;
-  color: rgb(110, 133, 8);
-  font-size: 20px;
-  font-style: italic;
-}
 #replaceBtn {
   background-color: red;
   color: white;
@@ -57,11 +52,25 @@ a {
   background-color: rgb(244, 235, 235);
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 768px) {
+  * {
+    max-width: 90%;
+    background-size: cover;
+  }
+  #eddie {
+    width: auto !important;
+    max-width: 50% !important;
+    break-after: 55%;
+  }
+
+  html {
+    max-width: 100%;
+    background-size: cover;
+  }
+
   body {
     font-size: 14px;
-    display: inline-block;
-    flex-direction: column;
+
     max-width: 100%;
   }
 
@@ -71,5 +80,29 @@ a {
     width: 100%;
     box-sizing: border-box;
     max-width: 100%;
+    background-size: cover;
+    break-before: 55%;
+    display: flex;
+    flex-direction: ;
+    flex-direction: column;
+  }
+
+  pre {
+    max-width: 100%;
+    word-wrap: wrap;
+  }
+  .output {
+    font-size: 14px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    break-after: 15px;
+    width: auto !important;
+
+    word-wrap: wrap;
+    max-width: 100%;
+    break-before: 55%;
+    overflow-x: auto;
   }
 }
